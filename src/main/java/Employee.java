@@ -30,7 +30,7 @@ public class Employee {
             return false;
         }
         Employee employee = (Employee) o;
-        return Objects.equals(name,employee,name) && Objects.equals(surname,employee,surname);
+        return Objects.equals(name,employee.name) && Objects.equals(surname,employee.surname);
 
     }
 
