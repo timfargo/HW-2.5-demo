@@ -1,9 +1,10 @@
 
+import java.awt.*;
 import java.util.Objects;
 
 import static java.util.Objects.hash;
 
-public class Employee {
+public class Employee extends Point {
     private final String name;
 
     private final String surname;
@@ -30,7 +31,7 @@ public class Employee {
             return false;
         }
         Employee employee = (Employee) o;
-        return Objects.equals(name,employee,name) && Objects.equals(surname,employee,surname);
+        return Objects.equals(name,employee.name) && Objects.equals(surname,employee.surname);
 
     }
 
